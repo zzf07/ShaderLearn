@@ -26,8 +26,12 @@ public class RenderToCubemap : EditorWindow
                 EditorUtility.DisplayDialog("警告", "有未关联的对象", "确认");
                 return;
             }
-            Camera camera = new GameObject("临时").AddComponent<Camera>();
+            GameObject posObj = new GameObject("临时");
+            posObj.transform.parent = obj.transform;
+            obj.SetActive(false);
+            Camera camera = posObj.AddComponent<Camera>();
             camera.RenderToCubemap(cubeMap);
+            obj.SetActive(true);
             DestroyImmediate(camera.gameObject);
         }
     }
