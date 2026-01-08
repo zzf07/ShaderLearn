@@ -94,7 +94,7 @@ Shader "Unlit/KajiyaKay"
             #pragma vertex vert
             #pragma fragment frag
             // make fog work
-            #pragma multi_compile_fwadd_fullshadows
+            #pragma multi_compile_fwdadd_fullshadows
 
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
@@ -144,7 +144,7 @@ Shader "Unlit/KajiyaKay"
                 float3 B = normalize(i.binormal);
                 float3 viewDir = normalize(_WorldSpaceCameraPos.xyz - i.wPos);
                 //float3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
-                #ifdef _USING_DIRECTIONAL_LIGHT
+                #ifdef USING_DIRECTIONAL_LIGHT
                     fixed3 lightDir = normalize(_WorldSpaceLightPos0.xyz);
                 #else
                     fixed3 lightDir = normalize(_WorldSpaceLightPos0.xyz - i.wPos);
