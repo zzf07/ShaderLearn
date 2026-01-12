@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\PostEffect\GaussianBlur.cs" />
     <Compile Include="Assets\Scripts\PostEffect\EdgeDetection.cs" />
     <Compile Include="Assets\Scripts\PostEffect\PostEffectBase.cs" />
+    <Compile Include="Assets\Scripts\PostEffect\Bloom.cs" />
     <Compile Include="Assets\Scripts\PostEffect\BrightnessStaturationContrast.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
   </ItemGroup>
@@ -77,6 +78,7 @@
     <None Include="Assets\Shader\Base\GradientFull.shader" />
     <None Include="Assets\Shader\Base\TestShader.shader" />
     <None Include="Assets\Shader\Base\Phong1.shader" />
+    <None Include="Assets\Shader\Better\Bloom.shader" />
     <None Include="Assets\Shader\Better\MirrorBase.shader" />
     <None Include="Assets\Shader\Better\Billboard.shader" />
     <None Include="Assets\Shader\Better\EdgeDetection.shader" />
