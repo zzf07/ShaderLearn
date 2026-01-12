@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PostEffect\GaussianBlur.cs" />
+    <Compile Include="Assets\Scripts\MusicView.cs" />
     <Compile Include="Assets\Scripts\PostEffect\MotionBlur.cs" />
     <Compile Include="Assets\Scripts\PostEffect\EdgeDetection.cs" />
     <Compile Include="Assets\Scripts\PostEffect\FOG.cs" />
@@ -105,7 +106,9 @@
     <None Include="Assets\Shader\Better\Refract.shader" />
     <None Include="Assets\Shader\Better\Reflective.shader" />
     <None Include="Assets\Shader\Better\MotionBlurWithDepthTex.shader" />
+    <None Include="Assets\Shader\Better\Sword.shader" />
     <None Include="Assets\Shader\Base\NormalWord.shader" />
+    <None Include="Assets\Shader\Better\MusicView.shader" />
     <None Include="Assets\Shader\Base\GradientBase.shader" />
     <None Include="Assets\Shader\Base\MoreLight.shader" />
   </ItemGroup>
