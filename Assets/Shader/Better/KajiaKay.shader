@@ -23,7 +23,8 @@ Shader "Unlit/KajiyaKay"
 
         Pass
         {
-            ZWrite Off
+            //ZWrite Off
+            Cull Front
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -57,6 +58,7 @@ Shader "Unlit/KajiyaKay"
         Pass
         {
             Tags { "LightMode" = "ForwardBase"  }
+            Cull Back
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -156,6 +158,7 @@ Shader "Unlit/KajiyaKay"
         Pass
         {
             Tags { "LightMode" = "ForwardAdd" }
+            Cull Back
             Blend One One
             CGPROGRAM
             #pragma vertex vert

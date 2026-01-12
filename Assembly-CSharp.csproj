@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\PostEffect\EdgeDetectionDepthNormal.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Shader\Better\PageTurning.shader" />
     <None Include="Assets\Shader\Base\Phong3.shader" />
     <None Include="Assets\Shader\Better\ScrollBK.shader" />
     <None Include="Assets\Shader\Base\NormalTangent.shader" />

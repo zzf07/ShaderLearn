@@ -14,14 +14,17 @@ Shader "Unlit/ComplexLight"
         _SpecularPower("Specular Power",Range(0,1)) = 1
         _EdgeColor("Edge Color",Color) = (1,1,1,1)
         _EdgePower("EdgePower",Float) = 0.1
+        _EdgeThreshold("Edge Threshold",Range(0,1)) = 1
     }
     SubShader
     {
-        Tags{"Queue"="Transparent" "RenderType"="Opaque"}
+        Tags{ "RenderType"="Opaque"}
 
         Pass
         {
-            ZWrite Off
+            //ZWrite Off
+            Cull Front
+
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
@@ -36,6 +39,7 @@ Shader "Unlit/ComplexLight"
 
             fixed4 _EdgeColor;
             float _EdgePower;
+            float _EdgeThreshold;
 
             v2f vert (appdata_base v)
             {
@@ -54,6 +58,7 @@ Shader "Unlit/ComplexLight"
 
         Pass
         {
+            Cull Back
             Tags { "LightMode"="ForwardBase" }
             CGPROGRAM
             #pragma vertex vert
@@ -138,6 +143,7 @@ Shader "Unlit/ComplexLight"
         {
             Tags { "LightMode"="ForwardAdd" }
             Blend One One
+            Cull Back
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
