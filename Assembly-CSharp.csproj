@@ -60,26 +60,33 @@
     <Analyzer Include="D:\Unity\Learn\2022.3.62f3c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\LightRotate.cs" />
+    <Compile Include="Assets\Scripts\Rotate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Shader\Phong3.shader" />
-    <None Include="Assets\Shader\NormalTangent.shader" />
-    <None Include="Assets\Shader\Lambert2.shader" />
-    <None Include="Assets\Shader\GradientFull.shader" />
-    <None Include="Assets\Shader\TestShader.shader" />
-    <None Include="Assets\Shader\Phong1.shader" />
-    <None Include="Assets\Shader\ComplexLight.shader" />
-    <None Include="Assets\Shader\HalfLambert2.shader" />
-    <None Include="Assets\Shader\Blinn_Phong1.shader" />
-    <None Include="Assets\Shader\Mask.shader" />
-    <None Include="Assets\Shader\Lambert1.shader" />
-    <None Include="Assets\Shader\HalfLambert1.shader" />
-    <None Include="Assets\Shader\Phong2.shader" />
-    <None Include="Assets\Shader\AlphaBlend.shader" />
-    <None Include="Assets\Shader\NormalWord.shader" />
-    <None Include="Assets\Shader\GradientBase.shader" />
-    <None Include="Assets\Shader\MoreLight.shader" />
+    <None Include="Assets\Shader\Base\Phong3.shader" />
+    <None Include="Assets\Shader\Base\NormalTangent.shader" />
+    <None Include="Assets\Shader\Better\Glass.shader" />
+    <None Include="Assets\Shader\Base\Lambert2.shader" />
+    <None Include="Assets\Shader\Better\KajiaKay.shader" />
+    <None Include="Assets\Shader\Base\GradientFull.shader" />
+    <None Include="Assets\Shader\Base\TestShader.shader" />
+    <None Include="Assets\Shader\Base\Phong1.shader" />
+    <None Include="Assets\Shader\Better\MirrorBase.shader" />
+    <None Include="Assets\Shader\Better\ComplexLight.shader" />
+    <None Include="Assets\Shader\Better\Glass++.shader" />
+    <None Include="Assets\Shader\Base\HalfLambert2.shader" />
+    <None Include="Assets\Shader\Base\Blinn_Phong1.shader" />
+    <None Include="Assets\Art\玛拉妮【景澄Official】_by_景澄Official_0c9294d644631c6b8fe41aacb1fcbafb\玛拉妮【景澄Official】\readme.txt" />
+    <None Include="Assets\Shader\Base\Mask.shader" />
+    <None Include="Assets\Shader\Base\Lambert1.shader" />
+    <None Include="Assets\Shader\Base\HalfLambert1.shader" />
+    <None Include="Assets\Shader\Base\Phong2.shader" />
+    <None Include="Assets\Shader\Base\AlphaBlend.shader" />
+    <None Include="Assets\Shader\Better\Refract.shader" />
+    <None Include="Assets\Shader\Better\Reflective.shader" />
+    <None Include="Assets\Shader\Base\NormalWord.shader" />
+    <None Include="Assets\Shader\Base\GradientBase.shader" />
+    <None Include="Assets\Shader\Base\MoreLight.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
