@@ -9,7 +9,7 @@ public class MusicView : MonoBehaviour
     public FFTWindow window = FFTWindow.Blackman;
     float[] spectrumData;
     float[] frequencyBands = new float[8];
-    int[] bandLimits = new int[9] { 20, 60, 150, 250, 500, 1000, 2000, 4000, 20000 };
+    int[] bandLimits = new int[9] { 20,63,160,400,1000,2500,6300,10000,20000 };//ԭ20, 60, 150, 250, 500, 1000, 2000, 4000, 20000
     float[] smoothedBands = new float[8];
     public float smoothSpeed = 10f;
     public float[] normalizedBands = new float[8];
@@ -32,7 +32,6 @@ public class MusicView : MonoBehaviour
 
         if (material != null)
         {
-            smoothedBands[7] -= 0.01f;
             material.SetFloatArray("_Audio", smoothedBands);
         }
     }
